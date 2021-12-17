@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Quotes</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="inner"  data-aos="flip-left">
+            <div class="image">
+                <img src="logo.png" alt="" id="twi" >
+               
+            </div>
+
+            <div class="box">
+                <i class="icon  fas fa-quote-left"></i>
+                <p id="text" class="text"></p>
+                <p id="author" class="author"></p>
+            </div>
+            <div class="btnn" id="footer">
+
+
+            <p id="btn" class="btn" type="button">New-quotes</p>
+            <p  class="btn" onclick="copyToClipboard('#text')">Copy</p>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    AOS.init();
+  </script>
+<script src="index.js"></script>
+<script src="index2.js"></script>
+</html>
